@@ -95,6 +95,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
+    scripts: [
+      { src: "https://cdn.botpress.cloud/webchat/v5.0/inject.js" },
+      {
+        src: "https://files.bpcontent.cloud/2026/10/01/06/20261001064029-TKVO9FFC.js",
+        defer: true,
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
